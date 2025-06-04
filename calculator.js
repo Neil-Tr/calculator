@@ -65,6 +65,7 @@ buttons.forEach(button => {
 
         if (!isNaN(buttonText)|| (buttonText ==='.')) {
          inputNumber += buttonText;
+         updateDisplay(inputNumber);
         }
         else if (['+', '-', '*', '/', '='].includes(buttonText)) {
             // if (inputNumber === '') return;
@@ -122,7 +123,7 @@ buttons.forEach(button => {
                 myArray = [result]; 
                 }
                 else {
-                    updateDisplay(`${number} ${buttonText}`);
+                    updateDisplay(`${result} ${buttonText}`);
                     myArray = [result, buttonText];
                 }
             }
