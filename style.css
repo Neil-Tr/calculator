@@ -4,3 +4,70 @@ h1 {
     font-weight: 300;
     color: #1F2937;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 280px;
+    background: linear-gradient(to bottom, #555454, #131212);
+
+}
+#display {
+    border: 2px solid gray;
+    width: 160px;
+    height: 25px;
+    background-color: rgb(216, 220, 221);
+    color: rgb(70, 68, 68);
+    text-align: right;
+    margin: 10px;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+.keypad {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.firstRow {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.otherRows {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.numericKeys {
+    background: linear-gradient(to bottom, #c9cec9, #2f362f);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.operators {
+    background: linear-gradient(to bottom, #ffffff, #b9c0b9);
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.topKeys {
+    background: linear-gradient(to bottom, #ffffff, #b9c0b9);
+    width: 50px;
+    height: 25px;
+}
