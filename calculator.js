@@ -54,6 +54,11 @@ buttons.forEach(button => {
     button.addEventListener('click', function(){
         let buttonText = this.textContent;
 
+        if (myArray.length === 0 && buttonText === '=')
+        {
+            return;
+        }
+        
         if (buttonText === 'AC') {
             inputNumber = '';
             myArray = [];
